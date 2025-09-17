@@ -1,5 +1,5 @@
     /* Minor custom tweaks to complement Tailwind */                                                 /* (Change the img, the Living Room) */
-    .hero-bg { background-image: linear-gradient(180deg, rgba(2,6,23,0.45), rgba(2,6,23,0.2)), url('Images/Living\ Room.jpg'); background-size: cover; background-position: center; }
+    .hero-bg { background-image: linear-gradient(180deg, rgba(2,6,23,0.45), rgba(2,6,23,0.2)), url('Living Room.jpg'); background-size: cover; background-position: center; }
 
     .cookie-banner { transform: translateY(120%); transition: transform .3s ease; }
 
