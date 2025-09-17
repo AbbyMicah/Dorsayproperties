@@ -1,0 +1,43 @@
+    /* Minor custom tweaks to complement Tailwind */                                                 /* (Change the img, the Living Room) */
+    .hero-bg { background-image: linear-gradient(180deg, rgba(2,6,23,0.45), rgba(2,6,23,0.2)), url('Images/Living\ Room.jpg'); background-size: cover; background-position: center; }
+
+    .cookie-banner { transform: translateY(120%); transition: transform .3s ease; }
+
+    .cookie-banner.show { transform: translateY(0%); }
+
+/*Edits*/
+@font-face{ font-family: 'CostaStand'; src: url('CostaStandBold.ttf') format('truetype'); font-weight: bold; font-style: normal;}
+
+.about_us_headline, .services_headline, .who_we_serve_headline, .how_to_rent_headline{font-family: 'CostaStand', sans-serif; font-weight: bold; color: #00006A;}
+
+.mission_companyvision{ font-family: 'OpenSans', sans-serif; font-weight: lighter; font-size: 14px; color: #000000; background: #FFFFFF;}
+
+.services_text, .who_we_serve_text, .how_to_rent_text{ font-family: 'OpenSans', sans-serif; font-size: 14px}
+
+.menu-btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  background: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+nav li{
+  display: inline;
+  list-style: none;
+  line-height: 42px;
+  margin-left: 15px;
+}
+
+nav a{
+  text-decoration: none;
+  color: #00006A;
+  transition: all 100ms ease-in-out;
+}
+
+nav li.active a{
+  background-color: #6fb72f;
+  padding: 10px;
+  border-radius: 5px;
+}

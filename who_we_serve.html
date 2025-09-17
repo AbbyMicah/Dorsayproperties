@@ -1,0 +1,94 @@
+<link rel="stylesheet" href="./styles.css">
+<link rel="stylesheet" href="Home.html">
+<link rel="stylesheet" href="script.js">
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>D'Orsay Properties — Apartment for Rent</title>
+  <!-- Tailwind Play CDN for quick styling (good for prototypes) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Flatpickr for date picking -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <!-- Open Sans text style-->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body class="antialiased text-gray-800">
+    <header class="sticky top-0 z-40 bg-white/70 backdrop-blur border-b">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3">
+        <!-- (Change the img, outside of apartment)  -->
+        <img src="Images/Outside House img.jpg" alt="logo" class="w-10 h-10 rounded-lg object-cover shadow" />
+        <div>
+          <h1 class="font-bold text-lg">(PLACE NAME)</h1>
+          <p class="text-xs text-gray-600">(TYPE OF APARTMENT) — (FAST OR SLOW WIFI)</p>
+        </div>
+      </a>
+      <nav id="mainMenu">
+        <li>
+            <a href="/Home.html">Home</a>
+        </li>
+        <li>
+            <a href="/Our_services.html">Our Services</a>
+        </li>
+        <li>
+            <a href="/how_to_rent.html">How To Rent</a>
+        </li>
+        <li class="active">
+            <a href="/">Who We Serve</a>
+        </li>
+        <li>
+            <a href="/about_us.html">About Us</a>
+        </li>
+      </nav>
+      <button id="mobileMenuBtn" class="md:hidden p-2 rounded bg-gray-100">
+        ☰
+      </button>
+    </div>
+    <!-- Mobile menu -->
+    <div id="mobileMenu" class="md:hidden hidden border-t">
+      <div class="px-4 py-3 flex flex-col gap-2">
+        <a href="Home.html" class="our_services_button">Home</a>
+        <a href="who_we_serve.html" class="our_services_button">Our Services</a>
+        <a href="how_to_rent.html" class="how_to_rent_button">How To Rent</a>
+        <a href="about_us.html" class="about_us_button">About Us</a>
+      </div>
+    </div>
+  </header>
+    <section id="who_we_serve" class="max-w-6xl mx-auto px-4 py-12">
+    <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-8">
+      <div>
+        <h4 class="text-xl font-semibold">Who We Serve</h4>
+        <h6 class="who_we_serve_headline">Every service we offer is guided by integrity, transparency, and respect.</h6>
+        <ul class="who_we_serve_text text-sm mt-2">
+          <h6><b>We proudly serve:</b></h6>
+          <li>•	Homeowners in distress who need a fast, fair solution.</li>
+          <li>•	Renters seeking quality housing in safe, thriving neighborhoods.</li>
+          <li>•	Communities in need of revitalization and investment.</li>
+        </ul>
+
+        <div class="mt-6">
+          <h5 class="font-medium">Trust & Safety</h5>
+          <div class="flex gap-3 mt-3 items-center">
+            <div class="p-3 bg-white rounded shadow text-center">
+              <img src="https://img.icons8.com/ios-filled/40/000000/verified-account.png" alt="verified" />
+              <div class="text-xs mt-1">Verified host</div>
+            </div>
+            <div class="p-3 bg-white rounded shadow text-center">
+              <img src="https://img.icons8.com/ios-filled/40/000000/lock.png" alt="secure" />
+              <div class="text-xs mt-1">Secure payments</div>
+            </div>
+            <div class="p-3 bg-white rounded shadow text-center">
+              <img src="https://img.icons8.com/ios-filled/40/000000/badge.png" alt="badge" />
+              <div class="text-xs mt-1">Guest reviews</div>
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+</html>

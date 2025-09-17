@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>D'Orsay Properties — Apartment for Rent</title>
+  <!-- Tailwind Play CDN for quick styling (good for prototypes) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Flatpickr for date picking -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <!-- Open Sans text style-->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="antialiased text-gray-800">
+  <!-- Header / Nav -->
+  <header class="sticky top-0 z-40 bg-white/70 backdrop-blur border-b">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3">
+        <!-- (Change the img, outside of apartment)  -->
+        <img src="Images/Outside House img.jpg" alt="logo" class="w-10 h-10 rounded-lg object-cover shadow" />
+        <div>
+          <h1 class="font-bold text-lg">(PLACE NAME)</h1>
+          <p class="text-xs text-gray-600">(TYPE OF APARTMENT) — (FAST OR SLOW WIFI)</p>
+        </div>
+      </a>
+      <nav id="mainMenu">
+        <li class="active">
+            <a href="/">Home</a>
+        </li>
+        <li>
+            <a href="/Our_services.html">Our Services</a>
+        </li>
+        <li>
+            <a href="/how_to_rent.html">How To Rent</a>
+        </li>
+        <li>
+            <a href="/who_we_serve.html">Who We Serve</a>
+        </li>
+        <li>
+            <a href="/about_us.html">About Us</a>
+        </li>
+      </nav>
+      <button id="mobileMenuBtn" class="md:hidden p-2 rounded bg-gray-100">
+        ☰
+      </button>
+    </div>
+    <!-- Mobile menu -->
+    <div id="mobileMenu" class="md:hidden hidden border-t">
+      <div class="px-4 py-3 flex flex-col gap-2">
+        <li class="active">
+            <a href="/">Home</a>
+        </li>
+        <li>
+            <a href="/Our_services.html">Our Services</a>
+        </li>
+        <li>
+            <a href="/how_to_rent.html">How To Rent</a>
+        </li>
+        <li>
+            <a href="/who_we_serve.html">Who We Serve</a>
+        </li>
+        <li>
+            <a href="/about_us.html">About Us</a>
+        </li>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero-bg text-white">
+    <div class="max-w-6xl mx-auto px-4 py-20 flex flex-col md:flex-row items-center gap-8">
+      <div class="md:w-6/12">
+        <h2 class="text-4xl md:text-5xl font-extrabold leading-tight">D'Orsay Properties</h2>
+        <p class="mt-4 text-lg text-white/90">Walk to public transport, cafes and museums. Fast Wi‑Fi, workspace, fully equipped kitchen and washer/dryer.</p>
+        <ul class="mt-6 grid grid-cols-2 gap-2 text-sm">
+          <li>🛏 1 bedroom • 2 guests</li>
+          <li>📶 300 Mbps Wi‑Fi</li>
+          <li>🧺 Washer / Dryer</li>
+          <li>🏙 City view balcony</li>
+        </ul>
+        <div class="mt-6 flex gap-3">
+          <a href="#pricing" class="px-5 py-3 rounded bg-white/20 border border-white">View Rates</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery" class="max-w-6xl mx-auto px-4 py-12">
+    <h3 class="text-2xl font-semibold">Gallery</h3>
+    <div class="mt-4 grid grid-cols-1 md:grid-cols-3 gap-4">
+      <img src="Images/Living Room.jpg" alt="Living Room" class="w-full h-56 object-cover rounded-lg shadow" />
+      <img src="Images/Common Space.jpg" alt="common space" class="w-full h-56 object-cover rounded-lg shadow" />
+      <img src="Images/Bedroom.jpg" alt="bedroom" class="w-full h-56 object-cover rounded-lg shadow" />
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section id="pricing" class="max-w-6xl mx-auto px-4 py-12">
+    <h3 class="text-2xl font-semibold">Pricing</h3>
+    <p class="text-sm text-gray-600 mt-2">Flexible rates: nightly, weekly and monthly. Cleaning fee and refundable deposit may apply.</p>
+
+    <div class="mt-6 grid md:grid-cols-3 gap-4">
+      <div class="p-4 border rounded-lg bg-white shadow-sm">
+        <h4 class="font-semibold">Nightly</h4>
+        <p class="text-3xl font-bold mt-2">$120</p>
+        <p class="text-sm text-gray-600 mt-1">Includes utilities and Wi‑Fi</p>
+      </div>
+      <div class="p-4 border rounded-lg bg-white shadow-sm">
+        <h4 class="font-semibold">Weekly</h4>
+        <p class="text-3xl font-bold mt-2">$700</p>
+        <p class="text-sm text-gray-600 mt-1">Best for short stays (save 15%)</p>
+      </div>
+      <div class="p-4 border rounded-lg bg-white shadow-sm">
+        <h4 class="font-semibold">Monthly</h4>
+        <p class="text-3xl font-bold mt-2">$2,400</p>
+        <p class="text-sm text-gray-600 mt-1">Long-term pricing — utilities capped</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews -->
+  <section id="reviews" class="bg-white py-12">
+    <div class="max-w-6xl mx-auto px-4">
+      <h3 class="text-2xl font-semibold">Guest Reviews</h3>
+      <div class="mt-6 grid md:grid-cols-3 gap-4">
+        <blockquote class="p-4 border rounded">
+          <p>“Great location and spotless apartment. The host was very responsive.”</p>
+          <footer class="mt-2 text-sm text-gray-600">— Ana, Spain</footer>
+        </blockquote>
+        <blockquote class="p-4 border rounded">
+          <p>“Perfect for remote work — fast Wi‑Fi and a quiet workspace.”</p>
+          <footer class="mt-2 text-sm text-gray-600">— Mark, UK</footer>
+        </blockquote>
+        <blockquote class="p-4 border rounded">
+          <p>“Loved the balcony view. Easy check-in.”</p>
+          <footer class="mt-2 text-sm text-gray-600">— Sofia, Italy</footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="max-w-6xl mx-auto px-4 py-12">
+    <h3 class="text-2xl font-semibold">Frequently Asked Questions</h3>
+    <div class="mt-4 space-y-3">
+      <details class="p-4 border rounded"><summary class="font-medium">Is there parking?</summary><p class="mt-2 text-sm text-gray-600">Street parking is available and there are two paid public car parks within 5 minutes.</p></details>
+      <details class="p-4 border rounded"><summary class="font-medium">What is the cancellation policy?</summary><p class="mt-2 text-sm text-gray-600">Free cancellation up to 7 days before check-in. For customized policies, please contact us.</p></details>
+      <details class="p-4 border rounded"><summary class="font-medium">Are pets allowed?</summary><p class="mt-2 text-sm text-gray-600">No pets, sorry — we keep the apartment allergen-friendly.</p></details>
+    </div>
+  </section>
+
+  <!-- Contact & Social -->
+  <footer class="bg-gray-900 text-white py-8">
+    <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-3 gap-6">
+      <div>
+        <h4 class="font-semibold">Host</h4>
+        <p class="text-sm mt-2">D'Orsey Properties — responsive host available by message.</p>
+        <!-- Change the email -->
+        <p class="text-sm mt-2">Email: <a href="mailto:pami@dorsayproperties.com" class="underline">pami@dorsayproperties.com</a></p>
+      </div>
+      <div>
+        <h4 class="font-semibold">Follow</h4>
+        <div class="flex gap-3 mt-2">
+          <a href="#" aria-label="Instagram">📸 Instagram</a>
+          <a href="#" aria-label="Facebook">👍 Facebook</a>
+          <a href="#" aria-label="Twitter">🐦 X</a>
+        </div>
+      </div>
+      <div>
+        <h4 class="font-semibold">Trust badges</h4>
+        <div class="flex gap-3 mt-2 items-center">
+          <img src="https://img.icons8.com/ios-filled/40/ffffff/lock.png" alt="secure" />
+          <img src="https://img.icons8.com/ios-filled/40/ffffff/checkmark.png" alt="verified" />
+          <img src="https://img.icons8.com/ios-filled/40/ffffff/star.png" alt="reviews" />
+        </div>
+      </div>
+    </div>
+    <div class="max-w-6xl mx-auto px-4 text-sm text-gray-400 mt-6">© 2025 D'Orsay Properties</div>
+  </footer>
+
+  <!-- Cookie consent -->
+  <div id="cookieBanner" class="fixed left-4 right-4 md:left-auto md:right-8 bottom-6 md:bottom-8 bg-white rounded-lg p-4 shadow cookie-banner">
+    <div class="flex items-start md:items-center gap-4">
+      <div class="flex-1">
+        <p class="font-medium">We use cookies to improve your experience</p>
+        <p class="text-sm text-gray-600">Functional cookies for booking and maps. Read our <a href="#" class="underline">privacy policy</a>.</p>
+      </div>
+      <div class="flex gap-2">
+        <button id="acceptCookies" class="px-4 py-2 rounded bg-blue-600 text-white">Accept</button>
+        <button id="dismissCookies" class="px-4 py-2 rounded border">Dismiss</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Minimal scripts: datepicker, booking estimate, mobile menu, cookie -->
+  <script>
+    // Mobile menu toggle
+    document.getElementById('mobileMenuBtn').addEventListener('click', function(){
+      const m = document.getElementById('mobileMenu');
+      m.classList.toggle('hidden');
+    });
+
+    // Flatpickr range for booking
+    flatpickr("#dateRange", { mode: "range", minDate: "today", dateFormat: "Y-m-d", onChange: updateEstimate });
+
+    // Price logic (simple example)
+    const baseNight = 120; // nightly base price
+    function daysBetween(d1, d2){
+      const a = new Date(d1); const b = new Date(d2);
+      const diff = Math.round((b - a) / (1000*60*60*24));
+      return diff;
+    }
+    function updateEstimate(selectedDates){
+      const el = document.getElementById('priceEstimate');
+      if(!selectedDates || selectedDates.length < 2) { el.textContent = '€' + baseNight + ' / night'; return; }
+      const nights = daysBetween(selectedDates[0].toISOString().slice(0,10), selectedDates[1].toISOString().slice(0,10));
+      let total = nights * baseNight;
+      // simple promo code
+      const promo = document.getElementById('promo').value.trim().toUpperCase();
+      if(promo === 'SUMMER10') total *= 0.9;
+      el.textContent = nights + ' nights — €' + total.toFixed(0);
+    }
+
+    // Booking form submit (mock)
+    document.getElementById('bookingForm').addEventListener('submit', function(e){
+      e.preventDefault();
+      const dates = document.getElementById('dateRange').value;
+      if(!dates){ alert('Please select check-in and check-out dates.'); return; }
+      alert('Thanks! We held your dates: ' + dates + '. We will email a confirmation shortly.');
+    });
+
+    // Cookie banner
+    const cookieBanner = document.getElementById('cookieBanner');
+    setTimeout(()=>{ if(!localStorage.getItem('cookiesAccepted')) cookieBanner.classList.add('show'); }, 800);
+    document.getElementById('acceptCookies').addEventListener('click', ()=>{ localStorage.setItem('cookiesAccepted','1'); cookieBanner.classList.remove('show'); });
+    document.getElementById('dismissCookies').addEventListener('click', ()=>{ cookieBanner.classList.remove('show'); });
+  </script>
+
+</body>
+</html>
